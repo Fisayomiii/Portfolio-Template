@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.mt{
+    margin-top: -1em;
+}
+ul.skills-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(140px, 200px));
+    grid-gap: 0 10px;
+    margin: 20px 0 0 0;
+    overflow: hidden;
+    list-style: none;
+}
+
+ul.skills-list li:before {
+    content: '▹';
+    position: absolute;
+    left: 0;
+    line-height: 20px;
+}
