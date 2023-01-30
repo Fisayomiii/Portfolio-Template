@@ -1,13 +1,14 @@
 import { useState } from 'react'
 import { Dialog } from "@headlessui/react";
+import { NavLink } from 'react-router-dom';
 import 'boxicons';
 
 function Header() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const navigation = [
-        { sn: "01", name: "Home", href: "/" },
-        { sn: "02", name: "Projects", href: "/" },
-        { sn: "03", name: "Contact", href: "/" },
+        { sn: "01", name: "Home", to: "/" },
+        { sn: "02", name: "Projects", to: "/projects" },
+        { sn: "03", name: "Contact", to: "/" },
     ];
 
     return (
@@ -22,9 +23,9 @@ function Header() {
                             <ul className='flex'>
                                 {navigation.map((item, i) => (
                                     <li key={i}>
-                                        <a className="font-normal text-gray-600 dark:text-gray-400 hidden md:inline-block p-1 sm:px-3 sm:py-2 rounded-lg hover:underline transition-all" href={item.href}>
+                                        <NavLink to={item.to} className="font-normal text-gray-600 dark:text-gray-400 hidden md:inline-block p-1 sm:px-3 sm:py-2 rounded-lg hover:underline transition-all">
                                             <span className="capsize">{item.name}</span>
-                                        </a>
+                                        </NavLink>
                                     </li>
                                 ))}
                             </ul>
@@ -42,13 +43,13 @@ function Header() {
                             <div className="mt-6 flow-root transition-all">
                                 <div className="my-6 divide-y divide-gray-500/10">
                                     <div className="space-y-2 py-6">
-                                        <div className="fixed top-10 right-90 w-full max-w-xs bg-white rounded-lg shadow-lg p-6 text-base font-semibold text-slate-900 dark:bg-slate-800 dark:text-slate-400 dark:highlight-white/5">
+                                        <div className="fixed top-10 right-10 w-full max-w-xs bg-white rounded-lg shadow-lg p-6 text-base font-semibold text-slate-900 dark:bg-slate-800 dark:text-slate-400 dark:highlight-white/5">
                                             <ul className="space-y-6">
                                                 {navigation.map((item, i) => (
                                                     <li key={i}>
-                                                        <a className="font-normal text-gray-600 dark:text-gray-400 p-1 sm:px-3 sm:py-2 rounded-lg hover:underline transition-all" href={item.href}>
+                                                        <NavLink to={item.to} className="font-normal text-gray-600 dark:text-gray-400 p-1 sm:px-3 sm:py-2 rounded-lg hover:underline transition-all" onClick={() => setMobileMenuOpen(false)}>
                                                             <span className="capsize">{item.name}</span>
-                                                        </a>
+                                                        </NavLink>
                                                     </li>
                                                 ))}
                                             </ul>
