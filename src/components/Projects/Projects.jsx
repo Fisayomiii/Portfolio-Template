@@ -1,5 +1,5 @@
-import React from "react"
-import Portfolio from "./Portfolio"
+import React from "react";
+import Portfolio from "./Portfolio";
 
 function Projects() {
     return (
@@ -19,4 +19,4 @@ function Projects() {
     )
 }
 
-export default Projects
+export default Projects;

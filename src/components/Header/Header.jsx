@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState } from 'react';
 import { Dialog } from "@headlessui/react";
 import { NavLink } from 'react-router-dom';
 import 'boxicons';
@@ -8,7 +8,7 @@ function Header() {
     const navigation = [
         { sn: "01", name: "Home", to: "/" },
         { sn: "02", name: "Projects", to: "/projects" },
-        { sn: "03", name: "Contact", to: "/" },
+        { sn: "03", name: "Contact", to: "/contact" },
     ];
 
     return (
