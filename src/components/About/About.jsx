@@ -19,7 +19,7 @@ function About() {
                         </p>
                     </div>
                     <div className="w-[80px] sm:w-[206px] relative mb-8 sm:mb-0 mr-auto">
-                        <img src="https://avatars.githubusercontent.com/u/101179443?v=4" alt="profile image" className="rounded-full grayscale hover:grayscale-0" />
+                        <img src="https://avatars.githubusercontent.com/u/101179443?v=4" alt="avatar" title="avatar" className="rounded-full grayscale hover:grayscale-0" />
                     </div>
                 </div>
 

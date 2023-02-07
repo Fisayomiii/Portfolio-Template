@@ -30,9 +30,9 @@ function Header() {
                                 ))}
                             </ul>
                         </div>
-                        <button aria-label="Toggle Dark Mode" type="button" className="w-9 h-9 bg-gray-200 rounded-lg dark:bg-gray-600 flex items-center justify-center hover:ring-2 ring-gray-300 transition-all">
-                            <span className="sr-only">theme</span>
-                            <box-icon name='moon'></box-icon>
+                        <button aria-label="Toggle Dark Mode" type="button" className="w-9 h-9 bg-gray-200 rounded-full dark:bg-gray-600 flex items-center justify-center hover:ring-2 ring-gray-300 transition-all">
+                            <span className="text-md font-extrabold">F</span>
+                            {/* <box-icon name='moon'></box-icon> */}
                             {/* {themeName === 'dark' ? <WbSunnyRoundedIcon /> : <Brightness2Icon />} */}
                         </button>
                     </nav>
