@@ -15,11 +15,11 @@ function About() {
                             <span className="font-semibold">Developer</span>
                         </h2>
                         <p className="tracking-wide text-gray-600 dark:text-gray-400 mb-16">
-                            Hey, I'm a Senior Software Engineer at Company. I enjoy working with Next.js and crafting beautiful front-end experiences.
+                            Hey, I'm a Frontend Developer at Company. I enjoy working with React Js and crafting beautiful front-end experiences.
                         </p>
                     </div>
                     <div className="w-[80px] sm:w-[206px] relative mb-8 sm:mb-0 mr-auto">
-                        <img src="https://media.istockphoto.com/id/1391785465/photo/3d-illustration-of-a-thinking-african-american-man-david-with-big-question-mark-in-speech.jpg?s=612x612&w=0&k=20&c=Epyh_UGCaN6UoJt_CDrVEKW9ZNSSdiOGpCpV5UtNtl0=" alt="profile image" className="rounded-full grayscale hover:grayscale-0" />
+                        <img src="https://avatars.githubusercontent.com/u/101179443?v=4" alt="profile image" className="rounded-full grayscale hover:grayscale-0" />
                     </div>
                 </div>
 
